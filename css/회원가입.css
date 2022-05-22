@@ -52,15 +52,33 @@ fieldset{
   margin-bottom: 30px;
   border: none;
 }
+fieldset li{
+ list-style: none;
+ margin-left: 80px;
+}
 legend{
   font-weight: bold;
   text-align: center;
+  padding: 10px;
+}
+label{
+  width: 110px;
+  float: left;
 }
 .right{
   float: right;
+}
+.button{
+  text-align: center;
 }
 footer{
   clear: both;
   background-color: #aaa;
   height: 70px;
+  text-align: center;
+}
+footer h1{
+  height: 60px;
+  margin: 0px;
+  padding-top: 10px;
 }
