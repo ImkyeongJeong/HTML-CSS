@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 요약</title>
+  <style>
+    caption{
+      text-align: left;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    thead{
+      background-color:cornflowerblue;
+    }
+    th, td{
+      border: 2px solid;
+      padding: 5px;
+    }
+    .bg_pink{
+      background-color:indianred;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>CSS 요약</caption>
+    <thead>
+      <tr>
+        <th>선택자</th>
+        <th>설명</th>
+        <th>사용 예</th>
+      </tr>
+    </thead>
+      <tr>
+        <td>전체 선택자</td>
+        <td>모든 요소에 적용</td>
+        <td>*{...}</td>
+      </tr>
+      <tr>
+        <td>태그 선택자</td>
+        <td>특정 태그에 적용</td>
+        <td>p{...}</td>
+      </tr>
+      <tr>
+        <td>그룹선택자</td>
+        <td>여러 태그에 적용</td>
+        <td>p,a,li{...}</td>
+      </tr>
+      <tr>
+        <td>클래스 선택자</td>
+        <td>특정 부분에 적용(여러 번 사용)</td>
+        <td>.red{...}   ->    (p class="red")</td>
+      </tr>
+      <tr>
+        <td>id 선택자</td>
+        <td>특정 부분에 적용(한번만 사용)</td>
+        <td>#red{...}     ->    (p id="red")</td>
+      </tr>
+      <tr>
+        <td>하위 선택자</td>
+        <td>모든 하위 요소에 스타일 적용</td>
+        <td>section p{...}</td>
+      </tr>
+      <tr>
+        <td>자식 선택자</td>
+        <td>자식 요소에만 적용</td>
+        <td>section > p{...}</td>
+      </tr>
+      <tr>
+        <td>인접 형제 선택자</td>
+        <td>첫 번째 동생 요소에 적용</td>
+        <td>h1 + p{...}</td>
+      </tr>
+      <tr>
+        <td>형제 선택자</td>
+        <td>모든 형제 요소에 적용</td>
+        <td>h1 ~ p{...}</td>
+      </tr>
+      <tr>
+        <td>속성 선택자</td>
+        <td>속성값을 비교해서 스타일 적용</td>
+        <td>a[target]{...}, a[target="_blank"]{...}, a[class~="button"], a[href^="http://], a[href$=".zip] A[href]="en"], a[class*="accent"](~=:or, ^=:문자로 시작하는, $=:문자로 끝나는, |=:문자로 시작하는(- 포함), *=: 값이 포함된)</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="bg_pink">[텍스트 관련 스타일] 규칙: 선택자(속성:속성값;)</td>
+      </tr>
+      <tr>
+        <td>font-family</td>
+        <td>글꼴 지정</td>
+        <td>p(font-family:"맑은 고딕";)</td>
+      </tr>
+      <tr>
+        <td>font-size</td>
+        <td>글자 크기</td>
+        <td>xx-small~xx-large | larger, smaller | em, px, pt 1em=16px</td>
+      </tr>
+      <tr>
+        <td>font-weight</td>
+        <td>글자 굵기</td>
+        <td>normal | bold | bolder | 100~900 400=normal 700=bold</td>
+      </tr>
+      <tr>
+        <td>font-variant</td>
+        <td>작은 대문자 표시</td>
+        <td>normal | small-caps</td>
+      </tr>
+      <tr>
+        <td>font-style</td>
+        <td>글자 스타일 지정</td>
+        <td>normal | italic</td>
+      </tr>
+      <tr>
+        <td>font</td>
+        <td>글꼴 속성 한꺼번에 지정</td>
+        <td>p(font:16px/25px "맑은 고딕" bold italic; 16px/25px=사이즈/줄간격</td>
+      </tr>
+      <tr>
+        <td>color</td>
+        <td>글자색</td>
+        <td>rgba(255,255,255,0.5) | #ff0022 | red</td>
+      </tr>
+      <tr>
+        <td>text-decoration</td>
+        <td>텍스트 줄 표시/없애기</td>
+        <td>none | underline | overline | line-through</td>
+      </tr>
+      <tr>
+        <td>text-transform</td>
+        <td>대소문자 변환</td>
+        <td>none | capitalize | uppercase | lowercase | fullwidth</td>
+      </tr>
+      <tr>
+        <td>text-shadow</td>
+        <td>그림자 효과</td>
+        <td>text-shadow:7px -7px 5px #000 [가로 세로 번짐 색상]</td>
+      </tr>
+      <tr>
+        <td>white-space</td>
+        <td>공백 처리</td>
+        <td>normal | nowrap | pre | pre-line | pre-wrap</td>
+      </tr>
+      <tr>
+        <td>letter-spacing</td>
+        <td>글자 간격</td>
+        <td>normal | px</td>
+      </tr>
+      <tr>
+        <td>word-spacing</td>
+        <td>단어 간격 지정</td>
+        <td>normal | px</td>
+      </tr>
+      <tr>
+        <td>direction</td>
+        <td>글자 쓰기 방향 지정</td>
+        <td>ltr | rtl (left-to-right, right-to-left)</td>
+      </tr>
+      <tr>
+        <td>text-align</td>
+        <td>문단 정렬</td>
+        <td>Left | right | center | justify | start | end | match-parent(부모 요소에 맞추어 정렬)</td>
+      </tr>
+      <tr>
+        <td>text-indent</td>
+        <td>문단 첫 글자 들여쓰기</td>
+        <td>15px | 5%</td>
+      </tr>
+      <tr>
+        <td>inline-height</td>
+        <td>줄 간격 조절</td>
+        <td>normal | 2(2배) | 20px | 20% | inherit(상속)</td>
+      </tr>
+      <tr>
+        <td>text-overflow</td>
+        <td>넘치는 텍스트 처리</td>
+        <td>clip | ellipsis(...) - overflow:hidden; white-space:nowrap; 속성이 함께 사용된 경우에 적용</td>
+      </tr>
+      <tr>
+        <td>list-sytle-type</td>
+        <td>목록의 블릿과 번호 스타일 지정</td>
+        <td>목록 번호: decimal 1,2,3.. | decimal-leading-zero 01,02...| lower-roman i,ii,.. | upper-roman  I, II,..| lower-alpha a,b..| upper-alpha A,B.. 블릿 기호: disc | circle | square | none(● ○ ■)</td>
+      </tr>
+      <tr>
+        <td>list-style-image</td>
+        <td>블릿 대신 이미지 넣기</td>
+        <td>url(img/dog.png) - 정사각형의 작은 이미지 필요</td>
+      </tr>
+      <tr>
+        <td>list-style-position</td>
+        <td>목록 들여쓰기 효과</td>
+        <td>inside | outside(기본값)(ul은 패딩이 기본적으로 40px이 있음)</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="bg_pink">[색상과 배경을 위한 스타일]</td>
+      </tr>
+      <tr>
+        <td>background-color</td>
+        <td>배경색</td>
+        <td>#0099ff | red | rgba(200,120,55,0.5) 참고(https://www.colorpicker.com/)</td>
+      </tr>
+      <tr>
+        <td>background-clip</td>
+        <td>배경색 지정 범위</td>
+        <td>Border-box 테두리까지 적용 | padding-box 패딩 범위까지 적용| content-box 내용 부분만 적용</td>
+      </tr>
+      <tr>
+        <td>background-image</td>
+        <td>배경 이미지</td>
+        <td>#art1{url(../img/bg1.png);}</td>
+      </tr>
+      <tr>
+        <td>background-repeat</td>
+        <td>반복 방법 지정 </td>
+        <td>repeat 가로세로 반복채움| repeat-x 가로반복| repeat-y 세로반복| no-repeat 한번만 표시</td>
+      </tr>
+      <tr>
+        <td>background-size </td>
+        <td>이미지 크기</td>
+        <td>auto 원래크기 | contain 요소 안에 모두 들어오도록 확대/축소(비율유지) 외곡은 되지 않으나 빈 공간 생길 수 있음| cover 요소 전체 영역에 맞게 확대/축소(꽉채움 외곡 생김) | 100px 50px | 50% 30% (100% : 요소 안에 딱 맞게 채움)</td>
+      </tr>
+      <tr>
+        <td>background-position</td>
+        <td>이미지 위치</td>
+        <td>가로 : left | center | right | px | % / 세로 : top | center | bottom | px | % 가운데는center center</td>
+      </tr>
+      <tr>
+        <td>background-origin </td>
+        <td>이미지 배치 기준</td>
+        <td>border-box 테두리 부터| padding-box 패딩부터| content-box 내용기준</td>
+      </tr>
+      <tr>
+        <td>background-attachment</td>
+        <td>이미지 고정</td>
+        <td>scroll 배경 이미지도 함께 스크롤(기본값)| fixed 화면에 이미지 고정</td>
+      </tr>
+      <tr>
+        <td>background</td>
+        <td>배경이미지 제어하기</td>
+        <td>백그라운드 관련 한꺼번에 속성 지정</td>
+      </tr>
+      <tr>
+        <td>linear-gradient</td>
+        <td>선형 그러데이션 효과 </td>
+        <td>linear-gradient(45deg, blue(시작색), white(중간색) 30%(위치), blue(끝색));
+          linear-gradient(to right top, blue, white 30%, blue);</td>
+      </tr>
+      <tr>
+        <td>radial-gradient</td>
+        <td>원형 그러데이션 효과 </td>
+        <td>radial-gradient(circle closest-side at 30% 50%,yellow,red,yellow); 
+          circle | ellipse, closest-side[corner], farthest-side[corner]
+          </td>
+      </tr>
+      <tr>
+        <td>repeating</td>
+        <td>그러데이션 반복 효과 </td>
+        <td>Repeating-linear-gradient(circle, yellow, yellow 10%, pink 10%, pink 20px);</td>
+      </tr>
+
+      <tr>
+        <td colspan="3" class="bg_pink">[레이아웃을 위한 스타일]</td>
+      </tr>
+      <tr>
+        <td>블록 레벨(block) </td>
+        <td>혼자 한 줄을 차지</td>
+        <td>p, h1 ~h6, ul, ol, div, blockquote, form, hr, table, fieldset, address</td>
+      </tr>
+
+      <tr>
+        <td>인라인 레벨inline</td>
+        <td>좌우는 먹히나 위아래는 안 먹힘</td>
+        <td>img, span, br, input, label, textarea등등 </td>
+      </tr>
+
+      <tr>
+        <td>margin </td>
+        <td>테두리 바깥 여백 지정(내 크기와 상관X, 나의 바깥 쪽 여백)</td>
+        <td>px | % | auto</td>
+      </tr>
+      <tr>
+        <td>padding </td>
+        <td>테두리 안 여백 지정 </td>
+        <td>px | % | auto</td>
+      </tr>
+      <tr>
+        <td>display </td>
+        <td>화면 표시 방법</td>
+        <td>block | inline | inline-block 배치는 인라인이나 블록 레벨 요소 속성 지정할 때| none 화면에 표시 X| inherit 상위 요소의 속성 상속</td>
+      </tr>
+      <tr>
+        <td>border-style</td>
+        <td>테두리 스타일</td>
+        <td>none | solid 실선 | dotted 점선 | dashed 파선 | hidden | double 이중선 | groove | inset | outset | ridge</td>
+      </tr>
+      <tr>
+        <td>border-width</td>
+        <td>테두리 두께</td>
+        <td>px | thin | medium | thick</td>
+      </tr>
+      <tr>
+        <td>border-color</td>
+        <td>테두리 색상</td>
+        <td>#0099ff | red | rgba(200,120,55,0.5)</td>
+      </tr>
+      <tr>
+        <td>border-radius</td>
+        <td>박스 모서리 둥글게 </td>
+        <td>px | em | % 순서 : left-top → top-right → bottom-right → bottom-left</td>
+      </tr>
+      <tr>
+        <td>box-shadow</td>
+        <td>박스 그림자</td>
+        <td>수평 | 수직 | 흐림 정도 | 번짐 정도 | 색상</td>
+      </tr>
+
+      <tr>
+        <td colspan="3" class="bg_pink">[CSS포지셔닝 스타일]</td>
+      </tr>
+      <tr>
+        <td>box-sizing </td>
+        <td>박스 너비 기준 정하기</td>
+        <td>content-box(패딩,보더값 주의) → box=width값 / border-box(마진값 주의) → box=width + padding + border</td>
+      </tr>
+      <tr>
+        <td>float</td>
+        <td>웹 요소를 문서 위에 배치</td>
+        <td>left | right | none(부모 영역이 사라질 수도 있음 값을 주거나 overflow:hidden해준다</td>
+      </tr>
+      <tr>
+        <td>clear</td>
+        <td>float 속성 해제하고 새로 시작</td>
+        <td>eft | right | both | none</td>
+      </tr>
+      <tr>
+        <td>position p.341</td>
+        <td>배치 방법 지정 </td>
+        <td>static 흐름에 맞춰 배치 | relative 각각의 방향을 기준으로 위치 지정 가능 top:-값 위로/ left:-값 왼쪽으로| absolute (부모relative기준)| fixed(지정한 위치에 고정 기준:브라우저 창) * absolute : 부모 요소 중 relative 기준</td>
+      </tr>
+      <tr>
+        <td>visibility</td>
+        <td>화면에 보이기/숨기기 /위치는 있지만 안 보인다. (display:none은 공간 없음 안보임)</td>
+        <td>visible 보이게 / opacity :1| hidden안 보이게(공간o) opacity:0 | collapse (표에서 행 열 겹치게, 다른 요소에선 hidden)</td>
+      </tr>
+      <tr>
+        <td>z-index</td>
+        <td>요소 쌓는 순서 </td>
+        <td>숫자가 클수록 위에 놓임</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

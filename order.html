@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상품 주문서</title>
+  <link href="css/order.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <h1>상품 주문서</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>개인 정보</legend>
+      <ul>
+        <li><label for="name" class="bold">이름</label><input type="text" placeholder="여백없이 입력" ></li>
+        <li><label for="tel" class="bold">연락처</label><input type="text" placeholder="연락가능한 번호" ></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>배송지 정보</legend>
+      <ul>
+        <li><label for="addr" class="bold">주소</label><input type="text"></li>
+        <li><label for="tel" class="bold">전화번호</label><input type="tel"></li>
+        <li><label for="memo" class="bold">메모</label><input type="text"></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>주문 정보</legend>
+      <ul>
+        <li><label for=""><input type="checkbox" name="check1">경북성주 참외(5kg)<input type="number" value="0" class="numBox">Box</label></li>
+        <li><label for=""><input type="checkbox" name="check1">경북영천 포도(5kg)<input type="number" value="0" class="numBox">Box</label></li>
+        <li><label for=""><input type="checkbox" name="check1">경북봉화 수박(5kg)<input type="number" value="0" class="numBox">Box</label></li>
+      </ul>
+    </fieldset>
+    <div class="btn_rst">
+      <input type="button" value="주문하기">
+      <input type="reset" value="다시작성">
+    </div>
+  </form>
+  </div>
+</body>
+</html>

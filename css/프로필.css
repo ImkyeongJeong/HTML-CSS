@@ -1,0 +1,33 @@
+body{
+  background-color: white;
+  margin: 0 auto;
+}
+.left{
+  background-color:khaki;
+  width: 250px;
+  float: left;
+}
+.right{
+  width: 500px;
+  background-color: white;
+  float: right;
+}
+
+
+
+
+
+table{
+  width:70%;
+  border: 1px solid #222;
+  border-collapse: collapse;
+}
+thead{
+  background: #eee;
+}
+th, td{
+  border:1px #ccc;
+  padding: 5px;
+  font-size: 0.8em;
+  text-align: center;
+}

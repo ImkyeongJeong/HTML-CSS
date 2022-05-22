@@ -1,0 +1,28 @@
+.container{
+  width: 500px;
+  margin: 0 auto;
+}
+fieldset{
+  margin-bottom: 15px;
+}
+legend{
+  font-weight: bold;
+  color:darkgreen;
+}
+label{
+  width: 110px;
+  float: left;
+}
+.applicant  label{
+  width: 70px;
+}
+li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+.num{
+  width: 169px;
+}
+.sbmt_rst{
+  text-align: center;
+}

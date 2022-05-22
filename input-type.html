@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input-type</title>
+  <link href="css/input-type.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="post">
+      <fieldset>
+        <label for="id">아이디:</label><input type="text" class="login">
+        <label for="pw">비밀번호: </label><input type="text" class="login">
+        <input type="submit" value="로그인">
+      </fieldset>
+
+      <fieldset class="info">
+        <legend>개인 정보</legend>
+        <ul>
+          <li><label>아이디: <span class="red">*</span></label><input type="text" size="10"></li>
+          <li><label>비밀번호: <span class="red">*</span></label><input type="text"></li>
+          <li><label>비밀번호 확인: <span class="red">*</span></label><input type="text"></li>
+          <li><label>이름: <span class="red">*</span></label><input type="text"></li>
+          <li><label>메일 주소: <span class="red">*</span></label><input type="email" size="20"></li>
+          <li><label>홈페이지 주소:</label><input type="url"></li>
+          <li><label>우편번호:</label><input type="text" size="3"> - <input type="text" size="3"> <button>우편번호 검색</button></li>
+          <li><label>집주소:</label><input type="text" size="40"></li>
+          <li><label>연락처:</label><input type="tel"></li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <label>검색: <input type="text"></label>
+        <input type="button" value="검색">
+        <input type="button" value="다시입력">
+      </fieldset>
+
+      <fieldset class="info2">
+        <legend>등록 정보</legend>
+        <ul>
+          <li>
+            <label>참여인원<small>(최대10명):</small></label>
+            <input type="number" value="1" min="0" max="10" step="1">
+          </li>
+          <li>
+            <label>지원물품<small>(1인당 5개):</small></label>
+            <input type="number" value="1" min="0" max="50" step="5">
+          </li>
+          <li>
+            <label>희망 단계<small>(상,중,하):</small></label>
+            <input type="range" value="1" min="1" max="3" step="1">
+          </li>
+          <li>
+            <label>첨부파일 선택:</label><input type="file">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>수강 과목을 선택하세요<small>(1과목 선택 가능)</small></legend>
+        <ul>
+          <li><label>선호색상 <input type="color"></label></li>
+          <li>
+            <label>신청 과목<small>(회화)</small></label>
+            <input type="radio" name="subject" checked>영어회화(초급)
+            <input type="radio" name="subject">영어회화(중급)
+            <input type="radio" name="subject">영어회화(고급)
+          </li>
+          <li>
+            <label>관심분야는?<small>(다수선택)</small><input type="checkbox" name="twitter" value="twitter" checked>Twitter</label>
+            <label><input type="checkbox" name="facebook" value="facebook">Facebook</label>
+            <label><input type="checkbox" name="instagram" value="instagram">Instagram</label>
+          </li>
+        </ul>
+      </fieldset>
+      <input type="submit" value="전송">
+      <input type="reset" value="취소">
+    </form>
+  </div>
+</body>
+</html>

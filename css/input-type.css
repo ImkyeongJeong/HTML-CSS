@@ -1,0 +1,28 @@
+.container{
+  width: 600px;
+  margin: 0 auto;
+}
+fieldset{
+  margin-bottom: 10px;
+}
+legend{
+  font-weight: bold;
+}
+li{
+  margin-bottom: 3px;
+  list-style: none;
+}
+.login{
+  width: 100px;
+}
+.info label{
+  width: 130px;
+  float: left;
+}
+.info2 label{
+  width: 135px;
+  float: left;
+}
+.red{
+  color: red;
+}
